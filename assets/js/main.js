@@ -57,3 +57,20 @@ for (let i = 0; i < team.length; i++) {
     }
     stringsPositionElement.innerHTML += `<p>${stringToPrint}</p>`; // mando a schermo il contenuto dell'oggetto in forma di tag <p> così è leggibile
 }
+
+
+// BONUS 1 (solo se non sei giá frustrato dalle milestone 1 e 2):
+// trasformare la stringa foto in una immagine effettiva
+
+//come prima collego il punto della dom dove stampare
+const stringsImgPositionElement = document.querySelector('.container_img_strings');
+// copio il ciclo precedente e modifico per inserire le img
+for (let i = 0; i < team.length; i++) {
+    const element = team[i]; // a ogni iterazione l'oggetto in posizione i a una variabile element
+    let stringToPrint = []; // inizializoz una stringa vuota
+    for (let key in element) { // ciclo nell'oggetto ogni chiave
+       stringToPrint.push(element[key]);//aggiungo alla stringa tutti i valori delle parole chiave dell'oggetto
+    }
+    // stampo i primi due valori come prima mentre per le img inserisco il valore all'interno di un tag img con il percorso file già inserito
+    stringsImgPositionElement.innerHTML += `<p>${stringToPrint[0]}, ${stringToPrint[1]}, <img src="./assets/img/${stringToPrint[2]}"></p>`; // mando a schermo il contenuto dell'oggetto in forma di tag <p> così è leggibile
+}
