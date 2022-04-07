@@ -59,7 +59,7 @@ for (let i = 0; i < team.length; i++) {
 }
 
 
-// BONUS 1 (solo se non sei giá frustrato dalle milestone 1 e 2):
+// BONUS 1:
 // trasformare la stringa foto in una immagine effettiva
 
 //come prima collego il punto della dom dove stampare
@@ -74,3 +74,8 @@ for (let i = 0; i < team.length; i++) {
     // stampo i primi due valori come prima mentre per le img inserisco il valore all'interno di un tag img con il percorso file già inserito
     stringsImgPositionElement.innerHTML += `<p>${stringToPrint[0]}, ${stringToPrint[1]}, <img src="./assets/img/${stringToPrint[2]}"></p>`; // mando a schermo il contenuto dell'oggetto in forma di tag <p> così è leggibile
 }
+
+
+// BONUS 2:
+// organizzare i singoli membri in card/schede
+// OK 😂
