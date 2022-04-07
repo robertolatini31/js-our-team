@@ -50,7 +50,7 @@ for (let i = 0; i < team.length; i++) {
     // stampo i primi due valori come prima mentre per le img inserisco il valore all'interno di un tag img con il percorso file già inserito
     cardPositionElement.innerHTML += `
     <div class="col d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 26rem;">
                         <img src="./assets/img/${elementsToPrint[2]}" class="card-img-top">
                         <div class="card-body text-center">
                             <h5>${elementsToPrint[0]}</h5>
