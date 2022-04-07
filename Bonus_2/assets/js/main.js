@@ -34,8 +34,9 @@ const team = [
 
 
 
-// BONUS 1:
-// trasformare la stringa foto in una immagine effettiva
+// BONUS 2:
+// organizzare i singoli membri in card/schede
+// OK 
 
 //come prima collego il punto della dom dove stampare
 const cardPositionElement = document.querySelector('main .row');
@@ -62,6 +63,3 @@ for (let i = 0; i < team.length; i++) {
     `
   }
 
-// BONUS 2:
-// organizzare i singoli membri in card/schede
-// OK 😂
