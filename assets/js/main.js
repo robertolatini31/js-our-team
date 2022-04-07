@@ -32,7 +32,7 @@ const team = [
     },
   ];
 
-//   MILESTONE 1 (da fare entro le 18):
+//   MILESTONE 1:
 // stampare su console le informazioni di nome, ruolo e la stringa della foto
 
 // creo un ciclo che scorre l'array di oggetti
@@ -43,3 +43,17 @@ for (let i = 0; i < team.length; i++) {
     }
 }
 
+// MILESTONE 2:
+// stampare le stesse informazioni su DOM sottoforma di stringhe
+
+// collego il punto della dom dove voglio inserire le stringhe
+const stringsPositionElement = document.querySelector('.container_strings');
+// copio il ciclo dei log e aggiongo la stampa a schermo
+for (let i = 0; i < team.length; i++) {
+    const element = team[i]; // a ogni iterazione l'oggetto in posizione i a una variabile element
+    let stringToPrint = []; // inizializoz una stringa vuota
+    for (let key in element) { // ciclo nell'oggetto ogni chiave
+       stringToPrint.push(element[key]);//aggiungo alla stringa tutti i valori delle parole chiave dell'oggetto
+    }
+    stringsPositionElement.innerHTML += `<p>${stringToPrint}</p>`; // mando a schermo il contenuto dell'oggetto in forma di tag <p> così è leggibile
+}
